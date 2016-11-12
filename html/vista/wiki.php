@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="/Contenidos/bootstrap-select-1.11.2/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="/Contenidos/DataTables-1.10.12/css/jquery.dataTables.min.css">
 <TITLE>wiki</TITLE>
-<body>
 </HEAD>
 <body>
 <?php
