@@ -11,17 +11,17 @@
   <?php
 include ("../Header.php");
 ?>
+
 <?php
     include "../bd/bd.php";
     public $base;
     $this->base=new Bd();
-    $this->base->conectar();
-    
     function Wiki($id){
+        $this->base->conectar();
         $resultado=$this->base->sentencia("select * from wiki where=".$id);    
+        $this->base->cerrar();
+        return $resultado;
     }
-    
-    $this->base->cerrar();
 ?>
 
 <div>
@@ -43,7 +43,7 @@ include ("../Header.php");
 
     <?php
 include("../Footer.php");
-
 ?>
+
  </body>
   </html>
