@@ -21,6 +21,7 @@ if ($_GET["action"] == "c")
             $status = "Error al subir el archivo";
         }
         echo $status;
+        
     }
     // fin agregar foto
     
