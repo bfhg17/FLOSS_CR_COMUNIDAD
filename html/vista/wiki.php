@@ -13,8 +13,8 @@ include ("../Header.php");
 ?>
 <?php
     include "../bd/bd.php";
-    $this->base=new Bd();
-    $this->base->conectar();
+    base=new Bd();
+    base->conectar();
     
     function Wiki($id){
         $resultado=$this->base->sentencia("select * from wiki where=".$id);    
