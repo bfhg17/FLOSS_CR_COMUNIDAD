@@ -13,7 +13,6 @@ include ("../Header.php");
 ?>
 <?php
     include "../bd/bd.php";
-    base=new Bd();
     base->conectar();
     
     function Wiki($id){
