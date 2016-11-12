@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+    
+
+<html >
+  <head>
+   
+   
+  </head>
+
+  <body>
+  <?php
+include ("../Header.php");
+?>
 <?php
     include "../bd/bd.php";
     public $base;
@@ -27,4 +40,10 @@
         </div>
     </form>
 </div>
-<
+
+    <?php
+include("../Footer.php");
+
+?>
+ </body>
+  </html>
