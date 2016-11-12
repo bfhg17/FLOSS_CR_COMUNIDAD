@@ -1,5 +1,5 @@
 <?php
- include '../logica/l_registro.php';
+
     $status = "";
 if ($_GET["action"] == "c")
 {
@@ -21,9 +21,12 @@ if ($_GET["action"] == "c")
             $status = "Error al subir el archivo";
         }
         echo $status;
-        agregarUsuario($_POST["nombre"],$_POST["apellido"],$_POST["nick"],$_POST["clave"],$_POST["acerca"],$_POST["foto"]);
     }
-    // fin agregar foto    
+    // fin agregar foto
+    
+    include '../logica/l_registro.php';
+    agregarUsuario($_POST["nombre"],$_POST["apellido"],$_POST["nick"],$_POST["clave"],$_POST["acerca"],$_POST["foto"]);
+    
 }
     
 ?>
@@ -69,11 +72,11 @@ include ("../Header.php");
     
     <form action="registro.php?action=c" method="post" enctype="multipart/form-data" id="formRegistro">
     <!--Titulo-->
-    <div class="col-md-offset-3 col-md-6" >
+    <div class="form-group center" >
         <h3>Registro de Usuario</h3>
     </div>
     <!--Mensaje de datos requeridos-->
-    <div class="col-md-6">
+    <div class="form-group">
         <label id="advertencia" style="display: none;">Debe ingresar los datos requeridos (*)</label>
         <br/>
     </div>
@@ -111,6 +114,7 @@ include ("../Header.php");
     <div class="form-group">
         <label for="pwd">Foto de perfil:</label>
         <input type="file" class="form-control" id="pwd" name="foto">
+        <br>
     </div>
     
     <button type="submit" class="btn btn-default">Enviar</button>
