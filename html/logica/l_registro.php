@@ -1,6 +1,6 @@
 <?php
     include "../bd/bd.php";
-    public $base;
+    $base;
     $this->base=new Bd();
         
     function agregarUsuario($nombre,$apellido,$nick,$clave,$acerca,$foto){
