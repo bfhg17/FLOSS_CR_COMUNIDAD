@@ -1,5 +1,5 @@
 <?php
-
+ include '../logica/l_registro.php';
     $status = "";
 if ($_GET["action"] == "c")
 {
@@ -21,13 +21,9 @@ if ($_GET["action"] == "c")
             $status = "Error al subir el archivo";
         }
         echo $status;
-        
+        agregarUsuario($_POST["nombre"],$_POST["apellido"],$_POST["nick"],$_POST["clave"],$_POST["acerca"],$_POST["foto"]);
     }
-    // fin agregar foto
-    
-    include '../logica/l_registro.php';
-    agregarUsuario($_POST["nombre"],$_POST["apellido"],$_POST["nick"],$_POST["clave"],$_POST["acerca"],$_POST["foto"]);
-    
+    // fin agregar foto    
 }
     
 ?>
