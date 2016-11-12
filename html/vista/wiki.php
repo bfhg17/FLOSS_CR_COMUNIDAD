@@ -13,7 +13,9 @@ include ("../Header.php");
 ?>
 <?php
     include "../bd/bd.php";
-    base->conectar();
+    public $base;
+    $this->base=new Bd();
+    $this->base->conectar();
     
     function Wiki($id){
         $resultado=$this->base->sentencia("select * from wiki where=".$id);    
