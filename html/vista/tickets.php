@@ -122,5 +122,10 @@ include ("../Header.php");
 	   <input type="submit" class="button button-block" name="submit" value="Completar"/>     
           </form>
     
+
+    <?php
+include("../Footer.php");
+
+?>
   </body>
 </html>
