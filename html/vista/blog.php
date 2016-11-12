@@ -15,9 +15,15 @@ extract($_GET);
 	<link rel="stylesheet" href="/Contenidos/bootstrap-select-1.11.2/css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="/Contenidos/DataTables-1.10.12/css/jquery.dataTables.min.css">
 <TITLE>Blog</TITLE>
+<body>
 </HEAD>
+<?php
+include("../Header.php");
 
-<form name="formulario"method="GET"action="blog.php">
+?>
+
+
+<form name="formulario" method="GET" action="blog.php">
   <br>
  <textarea placeholder="Escriba su comentario aquí" name="textarea" rows="10" cols="50" maxlength="1000"></textarea>
  <br>
@@ -25,6 +31,10 @@ extract($_GET);
 </form>
 <?php
 echo " Comentarios";
+
+?>
+<?php
+include("../Footer.php");
 
 ?>
 
@@ -39,4 +49,5 @@ echo " Comentarios";
 
 	<script src="/Contenidos/bootstrap-select-1.11.2/js/bootstrap-select.min.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="/Contenidos/bootstrap-select-1.11.2/js/i18n/defaults-es_CL.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	</body>
 </HTML>
