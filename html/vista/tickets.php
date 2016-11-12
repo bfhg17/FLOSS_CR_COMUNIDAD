@@ -9,6 +9,10 @@
 
   <body>
 
+<?php
+include ("../Header.php");
+?>
+
     <div class="form">
       
        <!-- FORMULARIO REGISTRARSE -->
