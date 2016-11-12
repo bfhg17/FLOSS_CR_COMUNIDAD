@@ -12,19 +12,19 @@
 include ("../Header.php");
 ?>
 
-<!--
-<?php
-    include "../bd/bd.php";
-    public $base;
-    $this->base=new Bd();
-    function Wiki($id){
-        $this->base->conectar();
-        $resultado=$this->base->sentencia("select * from wiki where=".$id);    
-        $this->base->cerrar();
-        return $resultado;
-    }
-?>
--->
+
+<!--<?php
+    //include "../bd/bd.php";
+    //public $base;
+    //$this->base=new Bd();
+    //function Wiki($id){
+    //    $this->base->conectar();
+    //    $resultado=$this->base->sentencia("select * from wiki where=".$id);    
+    //    $this->base->cerrar();
+    //    return $resultado;
+   // }
+?>-->
+
 
 <div>
 
