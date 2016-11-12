@@ -13,7 +13,6 @@ include ("../Header.php");
 ?>
 <?php
     include "../bd/bd.php";
-    public $base;
     $this->base=new Bd();
     $this->base->conectar();
     
